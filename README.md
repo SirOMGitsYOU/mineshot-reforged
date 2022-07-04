@@ -1,4 +1,4 @@
-# Mineshot Revived
+# Mineshot Revived 1.18+
 
 > **The future of this version of Mineshot Revived is unsure. I also developed a version for Fabric and while doing that, I noticed that I much prefer the flexibilty and portability of that framework. So check [that version](https://github.com/pascallj/mineshot-revived-fabric) out if you are interested.**
 
