@@ -16,7 +16,7 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 
 
-version = '3.0.0-alpha'
+version = '1.0-1.18'
 group = 'nl.pascalroeleven.minecraft.mineshotrevived' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Mineshot Revived'
 
