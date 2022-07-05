@@ -1,4 +1,4 @@
-package nl.pascalroeleven.minecraft.mineshotrevived.client;
+package com.siromgitsyou.minecraft.mineshotreforged.client;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_F9;
 
@@ -20,17 +20,17 @@ import net.minecraftforge.event.TickEvent.RenderTickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 
-import nl.pascalroeleven.minecraft.mineshotrevived.client.capture.task.CaptureTask;
-import nl.pascalroeleven.minecraft.mineshotrevived.client.capture.task.RenderTickTask;
-import nl.pascalroeleven.minecraft.mineshotrevived.client.util.ChatUtils;
+import com.siromgitsyou.minecraft.mineshotreforged.client.capture.task.CaptureTask;
+import com.siromgitsyou.minecraft.mineshotreforged.client.capture.task.RenderTickTask;
+import com.siromgitsyou.minecraft.mineshotreforged.client.util.ChatUtils;
 
 public class ScreenshotHandler {
 	private static final Minecraft MC = Minecraft.getInstance();
 	private static final Logger L = LogManager.getLogger();
-	private static final String KEY_CATEGORY = "key.categories.mineshotrevived";
+	private static final String KEY_CATEGORY = "key.categories.mineshotreforged";
 	private static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd_HH.mm.ss");
 
-	private final KeyBinding keyCapture = new KeyBinding("key.mineshotrevived.capture", GLFW_KEY_F9, KEY_CATEGORY);
+	private final KeyBinding keyCapture = new KeyBinding("key.mineshotreforged.capture", GLFW_KEY_F9, KEY_CATEGORY);
 
 	private Path taskFile;
 	private RenderTickTask task;

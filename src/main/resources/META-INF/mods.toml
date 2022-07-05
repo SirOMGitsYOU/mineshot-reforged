@@ -2,19 +2,18 @@
 modLoader="javafml" #mandatory
 
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
-loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+loaderVersion="[32,]" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
 license="Unlicense"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 	# The modid of the mod
-	modId="mineshotrevived" #mandatory
+	modId="mineshotreforged" #mandatory
 	# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 	version="${file.jarVersion}" #mandatory
 	# A display name for the mod
-	displayName="Mineshot Revived" #mandatory
-	updateJSONURL="https://pascallj.github.io/mineshot-revived/versions.json"
+	displayName="Mineshot Reforged" #mandatory
 	# A URL for the "homepage" for this mod, displayed in the mod UI
-	displayURL="https://github.com/pascallj/mineshot-revived" #optional
+	displayURL="https://github.com/SirOMGitsYOU/mineshot-reforged" #optional
 	# A text field displayed in the mod UI
 	credits="Thanks to Barracuda for creating the original Mineshot :)" #optional
 	# A text field displayed in the mod UI
@@ -25,19 +24,19 @@ license="Unlicense"
     '''
 	
 		# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-		[[dependencies.mineshotrevived]] #optional
+		[[dependencies.mineshotreforged]] #optional
 		    # the modid of the dependency
 		    modId="forge" #mandatory
 		    # Does this dependency have to exist - if not, ordering below must be specified
 		    mandatory=true #mandatory
 		    # The version range of the dependency
-		    versionRange="[32,)" #mandatory
+		    versionRange="[32,]" #mandatory
 		    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
 		    ordering="NONE"
 		    # Side this dependency is applied on - BOTH, CLIENT or SERVER
 		    side="BOTH"
 		# Here's another dependency
-		[[dependencies.mineshotrevived]]
+		[[dependencies.mineshotreforged]]
 		    modId="minecraft"
 		    mandatory=true
 		    versionRange="[1.16,1.16.5]"

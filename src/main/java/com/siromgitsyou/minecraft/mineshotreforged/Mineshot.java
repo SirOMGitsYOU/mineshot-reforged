@@ -1,4 +1,4 @@
-package nl.pascalroeleven.minecraft.mineshotrevived;
+package com.siromgitsyou.minecraft.mineshotreforged;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -7,11 +7,11 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-import nl.pascalroeleven.minecraft.mineshotrevived.client.OrthoViewHandler;
-import nl.pascalroeleven.minecraft.mineshotrevived.client.ScreenshotHandler;
-import nl.pascalroeleven.minecraft.mineshotrevived.client.config.MyModConfig;
+import com.siromgitsyou.minecraft.mineshotreforged.client.OrthoViewHandler;
+import com.siromgitsyou.minecraft.mineshotreforged.client.ScreenshotHandler;
+import com.siromgitsyou.minecraft.mineshotreforged.client.config.MyModConfig;
 
-@Mod("mineshotrevived")
+@Mod("mineshotreforged")
 
 public class Mineshot {
 	public Mineshot() {

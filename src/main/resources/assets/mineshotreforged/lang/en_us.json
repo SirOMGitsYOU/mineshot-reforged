@@ -1,0 +1,19 @@
+{
+	"key.categories.mineshotreforged": "Mineshot Reforged",
+	
+	"key.mineshotreforged.capture": "Take Huge Screenshot",
+	"key.mineshotreforged.ortho.toggle": "Camera Mode",
+	"key.mineshotreforged.ortho.zoom_in": "Camera Zoom In",
+	"key.mineshotreforged.ortho.zoom_out": "Camera Zoom Out",
+	"key.mineshotreforged.ortho.rotate_l": "Camera Turn Left",
+	"key.mineshotreforged.ortho.rotate_r": "Camera Turn Right",
+	"key.mineshotreforged.ortho.rotate_u": "Camera Turn Up",
+	"key.mineshotreforged.ortho.rotate_d": "Camera Turn Down",
+	"key.mineshotreforged.ortho.rotate_t": "Camera Top View",
+	"key.mineshotreforged.ortho.rotate_f": "Camera Front View",
+	"key.mineshotreforged.ortho.rotate_s": "Camera Side View",
+	"key.mineshotreforged.ortho.clip": "Camera Change Clipping",
+	"key.mineshotreforged.ortho.mod": "Modifier key for alternate functions",
+	
+	"mineshotreforged.orthomp": "Orthographic perspective not available in multiplayer"
+}

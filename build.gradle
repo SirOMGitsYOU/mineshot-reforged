@@ -13,7 +13,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
 version = '3.0.0-alpha'
-group = 'nl.pascalroeleven.minecraft.mineshotrevived' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = 'com.siromgitsyou.minecraft.mineshotreforged' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'Mineshot Revived'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
@@ -31,7 +31,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             mods {
-                mineshotrevived {
+                mineshotreforged {
                     source sourceSets.main
                 }
             }
@@ -49,7 +49,7 @@ dependencies {
 jar {
 	manifest {
 		attributes([
-				"Specification-Title"     : "mineshotrevived",
+				"Specification-Title"     : "mineshotreforged",
 				"Specification-Version"   : "1.0", // We are version 1 of ourselves
 				"Implementation-Title"    : project.name,
 				"Implementation-Version"  : "${version}",

@@ -1,4 +1,4 @@
-package nl.pascalroeleven.minecraft.mineshotrevived.client;
+package com.siromgitsyou.minecraft.mineshotreforged.client;
 
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_KP_1;
 import static org.lwjgl.glfw.GLFW.GLFW_KEY_KP_2;
@@ -29,41 +29,41 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 
-import nl.pascalroeleven.minecraft.mineshotrevived.client.util.ChatUtils;
-import nl.pascalroeleven.minecraft.mineshotrevived.util.reflection.PrivateAccessor;
+import com.siromgitsyou.minecraft.mineshotreforged.client.util.ChatUtils;
+import com.siromgitsyou.minecraft.mineshotreforged.util.reflection.PrivateAccessor;
 
 @EventBusSubscriber(bus = EventBusSubscriber.Bus.FORGE)
 public class OrthoViewHandler implements PrivateAccessor {
 	private static final Minecraft MC = Minecraft.getInstance();
-	private static final String KEY_CATEGORY = "key.categories.mineshotrevived";
+	private static final String KEY_CATEGORY = "key.categories.mineshotreforged";
 	private static final float ZOOM_STEP = 0.5f;
 	private static final float ROTATE_STEP = 15;
 	private static final float ROTATE_SPEED = 4;
 	private static final float SECONDS_PER_TICK = 1f / 20f;
 
-	private final KeyBinding keyToggle = new KeyBinding("key.mineshotrevived.ortho.toggle", GLFW_KEY_KP_5,
+	private final KeyBinding keyToggle = new KeyBinding("key.mineshotreforged.ortho.toggle", GLFW_KEY_KP_5,
 			KEY_CATEGORY);
-	private final KeyBinding keyZoomIn = new KeyBinding("key.mineshotrevived.ortho.zoom_in", GLFW_KEY_KP_ADD,
+	private final KeyBinding keyZoomIn = new KeyBinding("key.mineshotreforged.ortho.zoom_in", GLFW_KEY_KP_ADD,
 			KEY_CATEGORY);
-	private final KeyBinding keyZoomOut = new KeyBinding("key.mineshotrevived.ortho.zoom_out", GLFW_KEY_KP_SUBTRACT,
+	private final KeyBinding keyZoomOut = new KeyBinding("key.mineshotreforged.ortho.zoom_out", GLFW_KEY_KP_SUBTRACT,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateL = new KeyBinding("key.mineshotrevived.ortho.rotate_l", GLFW_KEY_KP_4,
+	private final KeyBinding keyRotateL = new KeyBinding("key.mineshotreforged.ortho.rotate_l", GLFW_KEY_KP_4,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateR = new KeyBinding("key.mineshotrevived.ortho.rotate_r", GLFW_KEY_KP_6,
+	private final KeyBinding keyRotateR = new KeyBinding("key.mineshotreforged.ortho.rotate_r", GLFW_KEY_KP_6,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateU = new KeyBinding("key.mineshotrevived.ortho.rotate_u", GLFW_KEY_KP_8,
+	private final KeyBinding keyRotateU = new KeyBinding("key.mineshotreforged.ortho.rotate_u", GLFW_KEY_KP_8,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateD = new KeyBinding("key.mineshotrevived.ortho.rotate_d", GLFW_KEY_KP_2,
+	private final KeyBinding keyRotateD = new KeyBinding("key.mineshotreforged.ortho.rotate_d", GLFW_KEY_KP_2,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateT = new KeyBinding("key.mineshotrevived.ortho.rotate_t", GLFW_KEY_KP_7,
+	private final KeyBinding keyRotateT = new KeyBinding("key.mineshotreforged.ortho.rotate_t", GLFW_KEY_KP_7,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateF = new KeyBinding("key.mineshotrevived.ortho.rotate_f", GLFW_KEY_KP_1,
+	private final KeyBinding keyRotateF = new KeyBinding("key.mineshotreforged.ortho.rotate_f", GLFW_KEY_KP_1,
 			KEY_CATEGORY);
-	private final KeyBinding keyRotateS = new KeyBinding("key.mineshotrevived.ortho.rotate_s", GLFW_KEY_KP_3,
+	private final KeyBinding keyRotateS = new KeyBinding("key.mineshotreforged.ortho.rotate_s", GLFW_KEY_KP_3,
 			KEY_CATEGORY);
-	private final KeyBinding keyClip = new KeyBinding("key.mineshotrevived.ortho.clip", GLFW_KEY_KP_MULTIPLY,
+	private final KeyBinding keyClip = new KeyBinding("key.mineshotreforged.ortho.clip", GLFW_KEY_KP_MULTIPLY,
 			KEY_CATEGORY);
-	private final KeyBinding keyMod = new KeyBinding("key.mineshotrevived.ortho.mod", GLFW_KEY_LEFT_CONTROL,
+	private final KeyBinding keyMod = new KeyBinding("key.mineshotreforged.ortho.mod", GLFW_KEY_LEFT_CONTROL,
 			KEY_CATEGORY);
 
 	private boolean enabled;
@@ -118,7 +118,7 @@ public class OrthoViewHandler implements PrivateAccessor {
 		// Of course, programmers could just delete this check and abuse the
 		// orthographic camera, but at least the official build won't support it
 		if (!MC.isSingleplayer()) {
-			ChatUtils.print("mineshotrevived.orthomp");
+			ChatUtils.print("mineshotreforged.orthomp");
 			return;
 		}
 

@@ -1,4 +1,4 @@
-package nl.pascalroeleven.minecraft.mineshotrevived.util.reflection;
+package com.siromgitsyou.minecraft.mineshotreforged.util.reflection;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
