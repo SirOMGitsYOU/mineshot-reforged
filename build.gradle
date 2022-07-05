@@ -12,9 +12,9 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '3.0.0-alpha'
+version = '1.0-1.16.5'
 group = 'com.siromgitsyou.minecraft.mineshotreforged' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Mineshot Revived'
+archivesBaseName = 'mineshot-reforged'
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
